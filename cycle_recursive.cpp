@@ -338,6 +338,7 @@ int main(int argc, char* argv[]){
 	int* edges =(int*)malloc(sizeof(int)*top);	
 	FILE* fpdeg = fopen((fname+"deg").c_str(), "w+");
 	int sumdeg = 0;
+	/*
 	for(int i=0; i<top; i++){
 		int vertexid = getMaxDegreeVertex();
 		topn[i] = vertexid;
@@ -352,9 +353,9 @@ int main(int argc, char* argv[]){
 	fflush(fpdeg);
 	fclose(fpdeg);
 	printf("\n");	
-	
+	*/	
 	//show();
-	checkAdjlist(topn, top);
+	//checkAdjlist(topn, top);
 	free(topn);
 	free(edges);
 	topn = NULL;
